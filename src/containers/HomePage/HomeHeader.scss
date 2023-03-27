@@ -1,0 +1,176 @@
+.home-header-container{
+    height: 60px;
+    width: 100%;
+    padding: 0 40px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 100;
+    .home-header-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 0 40px;
+        .left-content{
+            width: 20%;
+            align-items: center;
+            display: flex;
+            
+            .header-logo{
+                // background: url(../../assets/images/logo.svg) center center no-repeat;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+                transform: scale(0.5,0.5);
+                margin-left: -52px;
+            }
+            i{
+                font-size: 24px;
+                color: gray;
+                cursor: pointer;
+            }
+        }
+        .center-content{
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .child-content{
+                font-size: 14px;
+                color: #333;
+                cursor: pointer;
+                .sub-title{
+                    font-size: 12px;
+                    font-weight:400;
+                    cursor: pointer;
+                }
+            }
+        }
+        .right-content{
+            width: 25%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            .support{
+                padding-right: 32px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            i{
+                margin: 0 4px;
+            }
+            .language-vn{
+                cursor: pointer;
+                margin: 0 10px;
+                &.active{
+                    color: rgb(255, 85, 0);
+                    font-weight: 600;
+                }
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+            .language-en{
+                cursor: pointer;
+                &.active{
+                    color: rgb(191, 0, 255);
+                    font-weight: 600;
+                }
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+.home-header-banner{
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(255,255,255,0.1));
+    background: url('../../assets/images/background.jpg');
+    height: 485px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    .content-up{
+        height: 65%;
+        padding-top: 15px;
+        
+        .title1{
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 1px 1px 1px #333;
+            color: white;
+            margin-bottom: 5px;
+            margin-top: 30px;
+        }
+        .title2{
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 1px 1px 1px #333;
+            color: white;
+            margin-bottom: 15px;
+        }
+        .search{
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 28px;
+            background: #f7d800;
+            i{
+                margin: 0 5px;
+            }
+            input{
+                height: 30px;
+                width: 360px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .content-down{
+        height: 35%;
+        display: flex;
+        padding-bottom: 10px;
+        align-items: flex-end;
+        justify-content: center;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 1));
+
+        .option{
+            text-align:center;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            .option-child{
+                cursor: pointer;
+                width: 100px;
+                .icon-child{
+                    background: white;
+                    width: 45px;
+                    height: 45px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin: 0 auto;
+                    i{
+                        font-size: 20px;
+                        color: #49bce2;
+                    }
+                }
+                .text-child{
+                    font-size: 17px;
+                    font-weight: 500;
+                    &:hover{
+                        color: #49bce2;
+                    }
+                }
+            }
+        }
+    }
+   
+}
